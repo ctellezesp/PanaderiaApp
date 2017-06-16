@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <html lang="es-ES">
+    <meta charset="UTF-8">
+    <link href="icon.css" rel="stylesheet">
+    <link rel="stylesheet" href="materialize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="materialize.js"></script>
+    <script type="text/javascript" src="functions.js"></script>
+    <script>
+    $( document ).ready(function() {
+     $(".button-collapse").sideNav();
+	});
+    </script>
+    </head>
+<body>
+<div class="row">
+    <div class="col l4"></div>
+    <div class="col s12 m12 l4" style="padding-top: 8%;">
+        <img src="logo.jpeg" style="padding-left: 30%">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="user" type="text" class="validate">
+                    <label for="user">Usuario</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">vpn_key</i>
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Contraseña</label>
+                </div>
+            </div>
+            <a href="admin.html" class="waves-effect waves-light btn right"><i class="material-icons right">done</i>Ingresar</a>
+        </form>
+    </div>
+    <div class="col l4"></div>
+</div>
+</body>
+</html>

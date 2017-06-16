@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Administracion</title>
+    <html lang="es-ES">
+    <meta charset="UTF-8">
+    <link href="icon.css" rel="stylesheet">
+    <link rel="stylesheet" href="materialize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="materialize.js"></script>
+    <script type="text/javascript" src="functions.js"></script>
+    <script>
+    $( document ).ready(function() {
+     $(".button-collapse").sideNav();
+	});
+    </script>
+    </head>
+<body>
+<nav>
+    <div class="nav-wrapper red accent-4">
+        <a href="#!" class="brand-logo">Pan La Villita</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li class="active"><a href="admin.html">Administrador</a></li>
+            <li><a href="ventas.html">Ventas</a></li>
+            <li><a href="#">Salir</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+            <li><a href="admin.html">Administrador</a></li>
+            <li><a href="ventas.html">Ventas</a></li>
+            <li><a href="#">Salir</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="row">
+    <div class="col l1"></div>
+    <div class="col s12 m12 l10">
+        <h3> Las ventas de hoy: </h3>
+        <ul class="collapsible" data-collapsible="accordion">
+            <li>
+                <div class="collapsible-header" onclick="totales()"><i class="material-icons">trending_up</i>Totales</div>
+                <div class="collapsible-body"><p id="first"></p></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">label</i>Por Categoria</div>
+                <div class="collapsible-body"><table class="striped">
+                    <thead>
+                    <tr>
+                        <th>Categoria</th>
+                        <th>Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Pasteles</td>
+                        <td>$1300.50</td>
+                    </tr>
+                    <tr>
+                        <td>Quesos</td>
+                        <td>$1500.50</td>
+                    </tr>
+                    <tr>
+                        <td>Leches</td>
+                        <td>$2000.50</td>
+                    </tr>
+                    </tbody>
+                </table></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">toc</i>Por Producto</div>
+                <div class="collapsible-body"><table class="striped">
+                    <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Pastel Helado</td>
+                        <td>20</td>
+                        <td>$1300.50</td>
+                    </tr>
+                    <tr>
+                        <td>Queso Manchego</td>
+                        <td>15</td>
+                        <td>$1500.50</td>
+                    </tr>
+                    <tr>
+                        <td>Leche Chocolate</td>
+                        <td>25</td>
+                        <td>$2000.50</td>
+                    </tr>
+                    </tbody>
+                </table></div>
+            </li>
+        </ul>
+    </div>
+    <div class="col l1"></div>
+</div>
+</body>
+</html>
